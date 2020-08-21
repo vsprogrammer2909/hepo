@@ -1103,7 +1103,7 @@ class Pattern26
     }
 }
 
-class pattern27
+class pattern26
 {
     public static void main(String args[])
     {
@@ -1123,5 +1123,51 @@ class pattern27
             sy-=2;
         }
     }
+}
 
+class Pattern27
+{
+    public static void main(String args[])
+    {
+        int sp=4,sy=73;
+        for(int i=1;i<=5;i++)
+        {
+            for(int j=1;j<=sp;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int k=65;k<=sy;k++)
+            {
+                System.out.print((char)k);
+            }
+            System.out.println();
+            sp++;
+            sy-=2;
+        }
+    }
+}
+
+class Pattern28
+{
+    public static void main(String args[])
+    {
+        int sp=4;
+        for(int i=1;i<=5;i++)
+        {
+            for(int j=1;j<=sp;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int k=1;k<=i;k++)
+            {
+                System.out.print(k);
+            }
+            for(int l=i-1;l>0;l--)
+            {
+                System.out.print(l);
+            }
+            System.out.println();
+            sp--;
+        }
+    }
 }
