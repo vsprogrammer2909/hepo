@@ -1,5 +1,6 @@
 /* write a java program to print all natural numbers from number one to ten */
 import java.io.*;
+import java.net.SocketOption;
 
 class Onetoten {
     public static void main(String args[]) throws IOException {
@@ -894,7 +895,7 @@ class Pattern13 {
         }
     }
 }
-
+//14,16
 /*
 17)    A
       BA
@@ -958,14 +959,19 @@ class Pattern19//HW
     }
 }
 
-class Pattern20 {
-    public static void main(String args[]) {
+class Pattern20
+{
+    public static void main(String args[])
+    {
         int sp = 0;
-        for (int i = 69; i <= 65; i++) {
-            for (int j = 1; j <= sp; j++) {
+        for (int i = 69; i >= 65; i--)
+        {
+            for (int j = 1; j <= sp; j++)
+            {
                 System.out.print(" ");
             }
-            for (int k = i; k >= 65; k++) {
+            for (int k = i; k >= 65; k--)
+            {
                 System.out.print((char) k);
             }
             System.out.println();
@@ -975,6 +981,12 @@ class Pattern20 {
 }
 
 /*
+20)EDCBA
+    DCBA
+     CBA
+      BA
+       A
+
 22)ACEGI
     ACEG
      ACE
@@ -1103,7 +1115,7 @@ class Pattern26
     }
 }
 
-class pattern26
+class pattern245635631265
 {
     public static void main(String args[])
     {
@@ -1196,9 +1208,9 @@ class Pattern30
     public static void main(String args[])
     {
         int sp=0;
-        for(int i=5;i>=1;i++)
+        for(int i=5;i>=1;i--)//i--
         {
-            for(int j=1;j<=sp;j++)
+            for(int j=1;j<=sp;j++)//j>=sp
             {
                 System.out.print(" ");
             }
@@ -1206,12 +1218,133 @@ class Pattern30
             {
                 System.out.print(k);
             }
-            for(int l=i-1;l>0;l++)
+            for(int l=i-1;l>=1;l--)//l>=1,l--
             {
                 System.out.print(l);
             }
             System.out.println();
-            sp--;
+            sp++;//sp++
+        }
+    }
+}
+
+class Pattern31
+{
+    public static void main(String args[])
+    {
+        int sp=0;
+        for(int i=69;i>=65;i--)
+        {
+            for(int j=1;j<=sp;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int k=65;k<=i;k++)
+            {
+                System.out.print((char)k);
+            }
+            for(int l=i-1;l>=65;l--)
+            {
+                System.out.print((char)l);
+            }
+            System.out.println();
+            sp++;
+        }
+    }
+}
+
+class Pattern32
+{
+    public static void main(String args[])
+    {
+        int sp=3;
+        for(int i=1;i<=5;i++)
+        {
+            if(i==1 || i==5)
+            {
+                System.out.println("*****");
+            }
+            else
+            {
+                for(int j=1;j<=sp;j++)
+                {
+                    System.out.print(" ");
+                }
+                System.out.println("*");
+                sp--;
+            }
+        }
+    }
+}
+
+class Pattern33
+{
+    public static void main(String args[])
+    {
+        int sp=1;
+        for(int i=1;i<=5;i++)
+        {
+            if(i==1 || i==5)
+            {
+                System.out.print("*****");
+            }
+            else
+            {
+                for(int j=1;j<=sp;j++)
+                {
+                    System.out.print(" ");
+                }
+                System.out.println();
+                sp++;
+            }
+        }
+    }
+}
+
+class Pattern34
+{
+    public static void main(String args[])
+    {
+        int sp=1;
+        for(int i=1;i<=5;i++)
+        {
+            if(i==1 || i==5)
+            {
+                System.out.print("12345");
+            }
+            else
+            {
+                for(int j=1;j<=sp;j++)
+                {
+                    System.out.print(" ");
+                }
+                System.out.println();
+                sp++;
+            }
+        }
+    }
+}
+
+class Pattern35
+{
+    public static void main (String args[])
+    {
+        int sp=3;
+        for(int i=1;i<=5;i++)
+        {
+            if(i==1 || i==5)
+            {
+                System.out.print("12345");
+            }
+            else
+            {
+                for(int j=1;j<=sp;j++)
+                {
+                    System.out.print(" ");
+                }
+                System.out.println();
+                sp--;
+            }
         }
     }
 }
