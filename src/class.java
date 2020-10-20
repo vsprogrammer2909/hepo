@@ -1,6 +1,5 @@
 /* write a java program to print all natural numbers from number one to ten */
 import java.io.*;
-import java.net.SocketOption;
 
 class Onetoten {
     public static void main(String args[]) throws IOException {
@@ -895,7 +894,7 @@ class Pattern13 {
         }
     }
 }
-//14,16
+
 /*
 17)    A
       BA
@@ -959,19 +958,14 @@ class Pattern19//HW
     }
 }
 
-class Pattern20
-{
-    public static void main(String args[])
-    {
+class Pattern20 {
+    public static void main(String args[]) {
         int sp = 0;
-        for (int i = 69; i >= 65; i--)
-        {
-            for (int j = 1; j <= sp; j++)
-            {
+        for (int i = 69; i <= 65; i++) {
+            for (int j = 1; j <= sp; j++) {
                 System.out.print(" ");
             }
-            for (int k = i; k >= 65; k--)
-            {
+            for (int k = i; k >= 65; k++) {
                 System.out.print((char) k);
             }
             System.out.println();
@@ -981,12 +975,6 @@ class Pattern20
 }
 
 /*
-20)EDCBA
-    DCBA
-     CBA
-      BA
-       A
-
 22)ACEGI
     ACEG
      ACE
@@ -1115,7 +1103,7 @@ class Pattern26
     }
 }
 
-class pattern245635631265
+class pattern26
 {
     public static void main(String args[])
     {
@@ -1183,6 +1171,7 @@ class Pattern28
         }
     }
 }
+
 
 class Pattern29 {
     public static void main(String args[]) {
